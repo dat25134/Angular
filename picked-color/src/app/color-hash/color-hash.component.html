@@ -1,0 +1,15 @@
+<style>
+  .color-preview{
+    padding: 30px;
+    color: black;
+    display: inline-block;
+  }
+</style>
+<h2>Color Picker</h2>
+<div>
+  <label>Chọn màu:</label>
+  <input [value]="background" type="color" (change)="onChange($event.target.value)">
+</div>
+
+<p>Output:</p>
+<div class="color-preview" [style.background]="background">{{background}}</div>
