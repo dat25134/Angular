@@ -1,0 +1,32 @@
+<div class="container col-6 mt-5 border rounded pb-2 bg-light">
+  <h2>Calculator</h2>
+  <div class="container result">
+    <input type="text" class="form-control" [(ngModel)] = "result">
+  </div>
+  <div class="container-fluid listBtn border rounded mt-2 mb-2 bg-white">
+    <div class="row justify-content-around">
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>1</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>2</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>3</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'plus()'>+</button>
+    </div>
+    <div class="row justify-content-around">
+      <button class="btn btn-light col-2 mt-2 mb-2"  (click) = 'add($event.target.innerText)'>4</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>5</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>6</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'sub()'>-</button>
+    </div>
+    <div class="row justify-content-around">
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>7</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>8</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>9</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'multy()'>x</button>
+    </div>
+    <div class="row justify-content-around">
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'reset()'>CE</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'add($event.target.innerText)'>0</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'solution()'>=</button>
+      <button class="btn btn-light col-2 mt-2 mb-2" (click) = 'divide()'>÷</button>
+    </div>
+  </div>
+</div>
